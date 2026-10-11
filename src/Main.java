@@ -19,5 +19,9 @@ public class Main {
         AverageMarksThread averageMarksThread = new AverageMarksThread(students[0]);
         averageMarksThread.start();
         averageMarksThread.join();
+
+        DepartmentGradeCountThread departmentGradeCountThread = new DepartmentGradeCountThread(students);
+        departmentGradeCountThread.start();
+        departmentGradeCountThread.join();
     }
 }
