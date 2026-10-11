@@ -9,5 +9,7 @@ public class AverageMarksThread extends Thread{
     public void run() {
         super.run();
         System.out.println("Average marks for " + student.getName() + ": " + student.getAverageMarks());
+        System.out.println("Letter grade for " + student.getName() + ": " + student.getLetterGrade());
+        System.out.println("Grade point for " + student.getName() + ": " + student.calculateTotalGradePoint());
     }
 }

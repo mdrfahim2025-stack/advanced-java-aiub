@@ -90,8 +90,15 @@ public class Student {
             case null, default -> 0.00;
         };
     }
-//
-//    public double getTotalGradePoint() {
-//
-//    }
+
+    public double calculateTotalGradePoint() {
+        double sum = 0;
+
+        for (int mark : marks) {
+            double grade = getPointForGrade(getGradePoint(mark));
+            sum += grade;
+        }
+
+        return sum / marks.length;
+    }
 }

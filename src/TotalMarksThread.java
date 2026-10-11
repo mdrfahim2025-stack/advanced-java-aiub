@@ -9,6 +9,5 @@ public class TotalMarksThread extends Thread {
     public void run() {
         super.run();
         System.out.println("Total Marks for " + student.getName() + ": " + student.getTotalMarks());
-        System.out.println("Letter grade for " + student.getName() + ": " + student.getLetterGrade());
     }
 }
